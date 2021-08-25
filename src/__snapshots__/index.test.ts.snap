@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pontem Definitions Pontem Snapshot 1`] = `
+Object {
+  "types": Array [
+    Object {
+      "minmax": Array [
+        0,
+        undefined,
+      ],
+      "types": Object {
+        "AccountInfo": "AccountInfoWithDualRefCount",
+        "AuthorId": "[u8;32]",
+        "Balance": "u64",
+        "MoveModuleId": Object {
+          "address": "AccountId",
+          "name": "Text",
+        },
+        "MoveStructTag": Object {
+          "address": "AccountId",
+          "module": "Text",
+          "name": "Text",
+        },
+        "MoveTypeTag": Object {
+          "Address": "",
+          "Bool": "",
+          "Signer": "",
+          "Struct": "MoveStructTag",
+          "U128": "",
+          "U64": "",
+          "U8": "",
+          "Vector": "MoveTypeTag",
+          "_enum": Array [
+            "Bool",
+            "U8",
+            "U64",
+            "U128",
+            "Address",
+            "Signer",
+            "Vector",
+            "Struct",
+          ],
+        },
+        "RegistrationInfo": Object {
+          "account": "AccountId",
+          "deposit": "Balance",
+        },
+        "RoundIndex": "u32",
+      },
+    },
+  ],
+}
+`;

@@ -6,15 +6,20 @@ export const pontemDefinitions: OverrideBundleDefinition = {
       minmax: [0, undefined],
       types: {
         AccountInfo: 'AccountInfoWithDualRefCount',
-        Balance: 'u64',
-        RoundIndex: 'u32',
         AuthorId: '[u8;32]',
+        Balance: 'u64',
         RegistrationInfo: {
           account: 'AccountId',
           deposit: 'Balance',
         },
+        RoundIndex: 'u32',
         MoveModuleId: {
           address: 'AccountId',
+          name: 'Text',
+        },
+        MoveStructTag: {
+          address: 'AccountId',
+          module: 'Text',
           name: 'Text',
         },
         MoveTypeTag: {
@@ -36,11 +41,6 @@ export const pontemDefinitions: OverrideBundleDefinition = {
           Signer: '',
           Vector: 'MoveTypeTag',
           Struct: 'MoveStructTag',
-        },
-        MoveStructTag: {
-          address: 'AccountId',
-          module: 'Text',
-          name: 'Text',
         },
       },
     },
