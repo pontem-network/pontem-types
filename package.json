@@ -1,6 +1,6 @@
 {
   "name": "pontem-types-bundle",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Bundled types to instantiate the Polkadot JS api with a Pontem network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
