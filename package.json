@@ -1,6 +1,6 @@
 {
   "name": "pontem-types-bundle",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Bundled types to instantiate the Polkadot JS api with a Pontem network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,7 +30,7 @@
     "check:type:watch": "npm run check:type -- --watch",
     "commit": "git add -A && (git diff-index --quiet HEAD || git commit -m 'deploy' --no-verify) && git push origin HEAD",
     "cz": "git cz",
-    "deploy": "npm run clean && npm run test && npm run version && npm run commit && npm publish"
+    "deploy": "npm run clean && npm run build && npm run test && npm run version && npm run commit && npm publish"
   },
   "keywords": [
     "pontem",
