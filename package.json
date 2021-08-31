@@ -1,6 +1,6 @@
 {
   "name": "pontem-types-bundle",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Bundled types to instantiate the Polkadot JS api with a Pontem network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "build": "rm -rf dist && tsc",
     "lint:all": "npm run lint:style && npm run lint:code",
     "lint:all:fix": "npm run lint:style:fix && npm run lint:code:fix",
-    "lint:code": "eslint --quiet {src,tests}/**/*.{js,jsx,ts,tsx,vue} *.{js,jsx,ts,tsx} --no-error-on-unmatched-pattern",
+    "lint:code": "eslint {src,tests}/**/*.{js,jsx,ts,tsx,vue} *.{js,jsx,ts,tsx} --no-error-on-unmatched-pattern",
     "lint:code:fix": "npm run lint:code -- --fix",
     "lint:style": "stylelint '(src|tests)/**/*.(css|scss|sass|less|vue)' '*.(css|scss|sass|less|vue)' --allow-empty-input",
     "lint:style:fix": "npm run lint:style -- --fix",
@@ -46,22 +46,23 @@
     "url": ""
   },
   "dependencies": {
-    "@polkadot/keyring": "^7.2.1",
-    "@polkadot/types": "^5.6.1",
-    "typescript": "^4.3.5"
+    "@polkadot/keyring": "^7.3.1",
+    "@polkadot/types": "^5.7.1",
+    "typescript": "^4.4.2"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^1.0.2",
     "@types/jest": "^27.0.1",
-    "@typescript-eslint/eslint-plugin": "4.29.3",
-    "@typescript-eslint/parser": "4.29.3",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "7.25.1",
     "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-webpack-plugin": "3.0.1",
-    "jest": "27.0.6",
+    "jest": "27.1.0",
     "jest-sonar-reporter": "2.0.0",
     "prettier": "^2.3.2",
     "standard-version": "^9.3.1",
