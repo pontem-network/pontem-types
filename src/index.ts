@@ -20,7 +20,7 @@ export const pontemDefinitions: OverrideBundleDefinition = {
             type: 'u64',
           },
         ],
-        type: 'Result<Estimation>',
+        type: 'Estimation',
       },
       estimateGasPublish: {
         aliasSection: 'mvm',
@@ -39,7 +39,7 @@ export const pontemDefinitions: OverrideBundleDefinition = {
             type: 'u64',
           },
         ],
-        type: 'Result<Estimation>',
+        type: 'Estimation',
       },
       gasToWeight: {
         aliasSection: 'mvm',

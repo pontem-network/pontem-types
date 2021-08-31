@@ -21,7 +21,7 @@ Object {
             "type": "u64",
           },
         ],
-        "type": "Result<Estimation>",
+        "type": "Estimation",
       },
       "estimateGasPublish": Object {
         "aliasSection": "mvm",
@@ -40,7 +40,7 @@ Object {
             "type": "u64",
           },
         ],
-        "type": "Result<Estimation>",
+        "type": "Estimation",
       },
       "gasToWeight": Object {
         "aliasSection": "mvm",
