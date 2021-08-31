@@ -2,14 +2,28 @@ import { OverrideVersionedType } from '@polkadot/types/types/registry';
 import { pontemDefinitions } from './index';
 
 const fields: string[] = [
-  'AccountInfo',
   'AuthorId',
   'Balance',
-  'RegistrationInfo',
-  'RoundIndex',
-  'MoveModuleId',
+  'Bond',
+  'Candidate',
+  'Collator2',
+  'CollatorSnapshot',
+  'ExitQ',
+  'InflationInfo',
   'MoveStructTag',
   'MoveTypeTag',
+  'Nominator',
+  'Nominator2',
+  'NominatorAdded',
+  'OrderedSet',
+  'ParachainBondConfig',
+  'Range',
+  'RangeBalance',
+  'RangePerbill',
+  'RegistrationInfo',
+  'RoundIndex',
+  'RoundInfo',
+  'ValidatorStatus',
 ];
 
 describe('Pontem Definitions', () => {

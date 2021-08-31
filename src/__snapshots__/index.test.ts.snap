@@ -2,6 +2,21 @@
 
 exports[`Pontem Definitions Pontem Snapshot 1`] = `
 Object {
+  "rpc": Object {
+    "mvm": Object {
+      "gasToWeight": Object {
+        "aliasSection": "mvm",
+        "description": "convert gas to weight",
+        "params": Array [
+          Object {
+            "name": "gas",
+            "type": "u64",
+          },
+        ],
+        "type": "Result<Weight>",
+      },
+    },
+  },
   "types": Array [
     Object {
       "minmax": Array [
@@ -9,12 +24,45 @@ Object {
         undefined,
       ],
       "types": Object {
-        "AccountInfo": "AccountInfoWithDualRefCount",
         "AuthorId": "[u8;32]",
         "Balance": "u64",
-        "MoveModuleId": Object {
-          "address": "AccountId",
-          "name": "Text",
+        "Bond": Object {
+          "amount": "Balance",
+          "owner": "AccountId",
+        },
+        "Candidate": Object {
+          "bond": "Balance",
+          "fee": "Perbill",
+          "id": "AccountId",
+          "nominators": "Vec<Bond>",
+          "state": "ValidatorStatus",
+          "total": "Balance",
+        },
+        "Collator2": Object {
+          "bond": "Balance",
+          "bottom_nominators": "Vec<Bond>",
+          "id": "AccountId",
+          "nominators": "Vec<AccountId>",
+          "state": "CollatorStatus",
+          "top_nominators": "Vec<Bond>",
+          "total_backing": "Balance",
+          "total_counted": "Balance",
+        },
+        "CollatorSnapshot": Object {
+          "bond": "Balance",
+          "nominators": "Vec<Bond>",
+          "total": "Balance",
+        },
+        "ExitQ": Object {
+          "candidate_schedule": "Vec<(AccountId, RoundIndex)>",
+          "candidates": "Vec<AccountId>",
+          "nominator_schedule": "Vec<(AccountId, Option<AccountId>, RoundIndex)>",
+          "nominators_leaving": "Vec<AccountId>",
+        },
+        "InflationInfo": Object {
+          "annual": "RangePerbill",
+          "expect": "RangeBalance",
+          "round": "RangePerbill",
         },
         "MoveStructTag": Object {
           "address": "AccountId",
@@ -41,11 +89,57 @@ Object {
             "Struct",
           ],
         },
+        "Nominator": Object {
+          "nominations": "Vec<Bond>",
+          "total": "Balance",
+        },
+        "Nominator2": Object {
+          "nominations": "Vec<Bond>",
+          "revocations": "Vec<AccountId>",
+          "scheduled_revocations_count": "u32",
+          "scheduled_revocations_total": "Balance",
+          "status": "NominatorStatus",
+          "total": "Balance",
+        },
+        "NominatorAdded": Object {
+          "_enum": Object {
+            "AddedToBottom": "Null",
+            "AddedToTop": "Balance",
+          },
+        },
+        "OrderedSet": "Vec<Bond>",
+        "ParachainBondConfig": Object {
+          "account": "AccountId",
+          "percent": "Percent",
+        },
+        "Range": "RangeBalance",
+        "RangeBalance": Object {
+          "ideal": "Balance",
+          "max": "Balance",
+          "min": "Balance",
+        },
+        "RangePerbill": Object {
+          "ideal": "Perbill",
+          "max": "Perbill",
+          "min": "Perbill",
+        },
         "RegistrationInfo": Object {
           "account": "AccountId",
           "deposit": "Balance",
         },
         "RoundIndex": "u32",
+        "RoundInfo": Object {
+          "current": "RoundIndex",
+          "first": "BlockNumber",
+          "length": "u32",
+        },
+        "ValidatorStatus": Object {
+          "_enum": Object {
+            "Active": "Null",
+            "Idle": "Null",
+            "Leaving": "RoundIndex",
+          },
+        },
       },
     },
   ],

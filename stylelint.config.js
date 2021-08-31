@@ -234,48 +234,6 @@ module.exports = {
   extends: 'stylelint-config-sass-guidelines',
   plugins: ['stylelint-order', 'stylelint-scss'],
   rules: {
-    'block-no-empty': null,
-    'color-named': 'never',
-    'comment-no-empty': true,
-    'declaration-block-no-duplicate-properties': [
-      true,
-      {
-        ignore: ['consecutive-duplicates-with-different-values'],
-      },
-    ],
-    indentation: 2,
-    'max-nesting-depth': 15,
-    'no-descending-specificity': null,
-    'order/properties-order': order,
-    'scss/at-extend-no-missing-placeholder': null,
-    'scss/at-mixin-pattern': '^.*$',
-    'scss/dollar-variable-pattern': '^.*$',
-    'scss/selector-no-redundant-nesting-selector': true,
-    'selector-class-pattern': '^.*$',
-    'selector-max-compound-selectors': 15,
-    'selector-max-id': 15,
-    'selector-no-qualifying-type': [
-      true,
-      {
-        ignore: ['attribute', 'class', 'id'],
-      },
-    ],
-    'selector-pseudo-element-no-unknown': [
-      true,
-      {
-        ignorePseudoElements: ['v-deep', 'input-placeholder'],
-      },
-    ],
-    'property-no-unknown': [
-      true,
-      {
-        ignoreProperties: [
-          'font-smoothing',
-          'text-stroke-color',
-          'text-stroke-width',
-        ],
-      },
-    ],
     'at-rule-no-unknown': [
       true,
       {
@@ -293,6 +251,31 @@ module.exports = {
         ],
       },
     ],
+    'block-no-empty': null,
+    'color-named': 'never',
+    'comment-no-empty': true,
+    'declaration-block-no-duplicate-properties': [
+      true,
+      {
+        ignore: ['consecutive-duplicates-with-different-values'],
+      },
+    ],
+    indentation: 2,
+    'max-nesting-depth': 15,
+    'no-descending-specificity': null,
+    'order/properties-order': order,
+    'property-no-unknown': [
+      true,
+      {
+        ignoreProperties: [
+          'font-smoothing',
+          'text-stroke-color',
+          'text-stroke-width',
+        ],
+      },
+    ],
+    'scss/at-extend-no-missing-placeholder': null,
+    'scss/at-mixin-pattern': '^.*$',
     'scss/at-rule-no-unknown': [
       true,
       {
@@ -308,6 +291,23 @@ module.exports = {
           'return',
           'warn',
         ],
+      },
+    ],
+    'scss/dollar-variable-pattern': '^.*$',
+    'scss/selector-no-redundant-nesting-selector': true,
+    'selector-class-pattern': '^.*$',
+    'selector-max-compound-selectors': 15,
+    'selector-max-id': 15,
+    'selector-no-qualifying-type': [
+      true,
+      {
+        ignore: ['attribute', 'class', 'id'],
+      },
+    ],
+    'selector-pseudo-element-no-unknown': [
+      true,
+      {
+        ignorePseudoElements: ['v-deep', 'input-placeholder'],
       },
     ],
   },
