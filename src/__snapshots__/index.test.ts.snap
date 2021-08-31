@@ -4,6 +4,44 @@ exports[`Pontem Definitions Pontem Snapshot 1`] = `
 Object {
   "rpc": Object {
     "mvm": Object {
+      "estimateGasExecute": Object {
+        "aliasSection": "mvm",
+        "description": "estimate gas for script execution",
+        "params": Array [
+          Object {
+            "name": "account",
+            "type": "AccountId",
+          },
+          Object {
+            "name": "tx_bc",
+            "type": "Bytes",
+          },
+          Object {
+            "name": "gas_limit",
+            "type": "u64",
+          },
+        ],
+        "type": "Result<Estimation>",
+      },
+      "estimateGasPublish": Object {
+        "aliasSection": "mvm",
+        "description": "estimate gas for module publishing",
+        "params": Array [
+          Object {
+            "name": "account",
+            "type": "AccountId",
+          },
+          Object {
+            "name": "module_bc",
+            "type": "Bytes",
+          },
+          Object {
+            "name": "gas_limit",
+            "type": "u64",
+          },
+        ],
+        "type": "Result<Estimation>",
+      },
       "gasToWeight": Object {
         "aliasSection": "mvm",
         "description": "convert gas to weight",
@@ -13,7 +51,18 @@ Object {
             "type": "u64",
           },
         ],
-        "type": "Result<Weight>",
+        "type": "Weight",
+      },
+      "weightToGas": Object {
+        "aliasSection": "mvm",
+        "description": "convert gas to weight",
+        "params": Array [
+          Object {
+            "name": "weight",
+            "type": "Weight",
+          },
+        ],
+        "type": "u64",
       },
     },
   },

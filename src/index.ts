@@ -3,6 +3,44 @@ import { OverrideBundleDefinition } from '@polkadot/types/types';
 export const pontemDefinitions: OverrideBundleDefinition = {
   rpc: {
     mvm: {
+      estimateGasExecute: {
+        aliasSection: 'mvm',
+        description: 'estimate gas for script execution',
+        params: [
+          {
+            name: 'account',
+            type: 'AccountId',
+          },
+          {
+            name: 'tx_bc',
+            type: 'Bytes',
+          },
+          {
+            name: 'gas_limit',
+            type: 'u64',
+          },
+        ],
+        type: 'Result<Estimation>',
+      },
+      estimateGasPublish: {
+        aliasSection: 'mvm',
+        description: 'estimate gas for module publishing',
+        params: [
+          {
+            name: 'account',
+            type: 'AccountId',
+          },
+          {
+            name: 'module_bc',
+            type: 'Bytes',
+          },
+          {
+            name: 'gas_limit',
+            type: 'u64',
+          },
+        ],
+        type: 'Result<Estimation>',
+      },
       gasToWeight: {
         aliasSection: 'mvm',
         description: 'convert gas to weight',
@@ -12,7 +50,18 @@ export const pontemDefinitions: OverrideBundleDefinition = {
             type: 'u64',
           },
         ],
-        type: 'Result<Weight>',
+        type: 'Weight',
+      },
+      weightToGas: {
+        aliasSection: 'mvm',
+        description: 'convert gas to weight',
+        params: [
+          {
+            name: 'weight',
+            type: 'Weight',
+          },
+        ],
+        type: 'u64',
       },
     },
   },
