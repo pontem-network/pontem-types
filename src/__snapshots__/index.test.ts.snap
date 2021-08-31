@@ -102,6 +102,10 @@ Object {
           "nominators": "Vec<Bond>",
           "total": "Balance",
         },
+        "Estimation": Object {
+          "gas_used": "u64",
+          "status_code": "u64",
+        },
         "ExitQ": Object {
           "candidate_schedule": "Vec<(AccountId, RoundIndex)>",
           "candidates": "Vec<AccountId>",

@@ -98,6 +98,10 @@ export const pontemDefinitions: OverrideBundleDefinition = {
           nominators: 'Vec<Bond>',
           total: 'Balance',
         },
+        Estimation: {
+          gas_used: 'u64',
+          status_code: 'u64',
+        },
         ExitQ: {
           candidate_schedule: 'Vec<(AccountId, RoundIndex)>',
           candidates: 'Vec<AccountId>',

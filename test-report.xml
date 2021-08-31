@@ -2,6 +2,6 @@
 <testExecutions version="1">
   <file path="/home/ds/Projects/dfinance/pontem-types/src/index.test.ts">
     <testCase name="Pontem Definitions Pontem Snapshot" duration="4"/>
-    <testCase name="Pontem Definitions Pontem Types" duration="12"/>
+    <testCase name="Pontem Definitions Pontem Types" duration="11"/>
   </file>
 </testExecutions>
