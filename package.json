@@ -1,6 +1,6 @@
 {
   "name": "pontem-types-bundle",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Bundled types to instantiate the Polkadot JS api with a Pontem network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -46,32 +46,32 @@
     "url": ""
   },
   "dependencies": {
-    "@polkadot/keyring": "^7.3.1",
-    "@polkadot/types": "^5.7.1",
-    "typescript": "^4.4.2"
+    "@polkadot/keyring": "^7.4.1",
+    "@polkadot/types": "^6.0.5",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^1.0.2",
-    "@types/jest": "^27.0.1",
-    "@typescript-eslint/eslint-plugin": "4.30.0",
-    "@typescript-eslint/parser": "4.30.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "4.31.2",
+    "@typescript-eslint/parser": "4.31.2",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "7.25.1",
+    "eslint-plugin-react": "7.26.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-webpack-plugin": "3.0.1",
-    "jest": "27.1.0",
+    "jest": "27.2.1",
     "jest-sonar-reporter": "2.0.0",
-    "prettier": "^2.3.2",
+    "prettier": "^2.4.1",
     "standard-version": "^9.3.1",
     "stylelint": "13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "1.2.0",
-    "stylelint-scss": "^3.20.1",
+    "stylelint-scss": "^3.21.0",
     "ts-jest": "27.0.5"
   }
 }
