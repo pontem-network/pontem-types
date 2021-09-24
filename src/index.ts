@@ -72,8 +72,18 @@ export const pontemDefinitions: OverrideBundleDefinition = {
         AuthorId: '[u8;32]',
         Balance: 'u64',
         Bond: {
-          amount: 'Balance',
           owner: 'AccountId',
+          amount: 'Balance',
+        },
+        Collator2: {
+          id: 'AccountId',
+          bond: 'Balance',
+          nominators: 'Vec<AccountId>',
+          top_nominators: 'Vec<Bond>',
+          bottom_nominators: 'Vec<Bond>',
+          total_counted: 'Balance',
+          total_backing: 'Balance',
+          state: 'CollatorStatus',
         },
         Candidate: {
           bond: 'Balance',
@@ -82,16 +92,6 @@ export const pontemDefinitions: OverrideBundleDefinition = {
           nominators: 'Vec<Bond>',
           state: 'ValidatorStatus',
           total: 'Balance',
-        },
-        Collator2: {
-          bond: 'Balance',
-          bottom_nominators: 'Vec<Bond>',
-          id: 'AccountId',
-          nominators: 'Vec<AccountId>',
-          state: 'CollatorStatus',
-          top_nominators: 'Vec<Bond>',
-          total_backing: 'Balance',
-          total_counted: 'Balance',
         },
         CollatorSnapshot: {
           bond: 'Balance',
@@ -186,6 +186,19 @@ export const pontemDefinitions: OverrideBundleDefinition = {
           _enum: {
             Active: 'Null',
             Idle: 'Null',
+            Leaving: 'RoundIndex',
+          },
+        },
+        CollatorStatus: {
+          _enum: {
+            Active: 'Null',
+            Idle: 'Null',
+            Leaving: 'RoundIndex',
+          },
+        },
+        NominatorStatus: {
+          _enum: {
+            Active: 'Null',
             Leaving: 'RoundIndex',
           },
         },

@@ -102,6 +102,13 @@ Object {
           "nominators": "Vec<Bond>",
           "total": "Balance",
         },
+        "CollatorStatus": Object {
+          "_enum": Object {
+            "Active": "Null",
+            "Idle": "Null",
+            "Leaving": "RoundIndex",
+          },
+        },
         "Estimation": Object {
           "gas_used": "u64",
           "status_code": "u64",
@@ -158,6 +165,12 @@ Object {
           "_enum": Object {
             "AddedToBottom": "Null",
             "AddedToTop": "Balance",
+          },
+        },
+        "NominatorStatus": Object {
+          "_enum": Object {
+            "Active": "Null",
+            "Leaving": "RoundIndex",
           },
         },
         "OrderedSet": "Vec<Bond>",

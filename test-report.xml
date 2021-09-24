@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/ds/Projects/dfinance/pontem-types/src/index.test.ts">
-    <testCase name="Pontem Definitions Pontem Snapshot" duration="4"/>
-    <testCase name="Pontem Definitions Pontem Types" duration="6"/>
+    <testCase name="Pontem Definitions Pontem Snapshot" duration="3"/>
+    <testCase name="Pontem Definitions Pontem Types" duration="4"/>
   </file>
 </testExecutions>

@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: 2019, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
   },
-  plugins: ['sort-keys-fix'],
+  plugins: [],
   rules: {
     '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -33,7 +33,5 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
-
-    'sort-keys-fix/sort-keys-fix': 2,
   },
 };
